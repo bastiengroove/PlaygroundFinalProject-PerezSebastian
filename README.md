@@ -21,7 +21,8 @@ pip --version
 Configuración del Proyecto
 Clona el repositorio:
 
-git clone: https://github.com/bastiengroove/bastiengroove-PlaygroundFinalProject-PerezSebastian.git
+git clone: https://github.com/bastiengroove/PlaygroundFinalProject-PerezSebastian.git
+
 
 
 Navega al directorio del proyecto:
