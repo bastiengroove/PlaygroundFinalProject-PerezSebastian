@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: bastiengroove@gmail.com
+Date: Mon, 19 Feb 2024 13:37:56 -0000
+Message-ID: <170834987631.21184.9622701039092315260@DESKTOP-N1M4JMQ>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/account/reset/Mw/c2n478-f427b33c6d251dafa39f601e12531fa6/
+
+Your username, in case you’ve forgotten: bastiengroove
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+
+    <main class="container">
+
+        <div class="row g-5">
+    
+            <div class="col-md-12">
+                {% include "blogs/featured.html" %}
+            </div>
+    
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    REALESES
+                </h3>
+                {% for post in post_list %}
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">
+                            {% comment %} <a href="{% url 'blogs:post' post.slug %}" style="text-decoration: none"
+                               class="text-black">
+                                {{ post.title }}
+                            </a> {% endcomment %}
+                            <a href="{{ post.get_absolute_url }}" style="text-decoration: none"
+                               class="text-black">
+                                {{ post.title }}
+                            </a>
+                        </h2>
+                        <p class="blog-post-meta">{{ post.pub_date.date }}. {{post.author}}</p>
+
+                        <hr>
+                        <p>{{ post.overview }}</p>
+                    </article>
+                {% endfor %}
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-light rounded">
+                        <h4 class="fst-italic">About Run Records</h4>
+                        <p class="mb-0">Run Records, founded by Sebastian Perez (Bastien Groove) in 2015, has earned a reputation in the last decade as an underground dance music label par excellence. It has established itself as a printing option for DJs who value functional, timeless and deep dance music. Run Records go relentlessly to the rhythm of quality, either to unlock talents not discovered in the international market or to launch EP of expert professionals. PARA PROYECTO FINAL CODERHOUSE 2023.</p>
+                    </div>
+            
+                    <div class="p-4">
+                        <h4 class="fst-italic"<b>SOPORTES:<b> 
+                            Roger Sanchez|Stefano Noferini|Neverdogs|Villalta|Ibiza Global Radio|Kiss FM|Sue La Vie|Tony H|Whistla|Sub FM|</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+{% endblock content %}
