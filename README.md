@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 Aplica las migraciones de la base de datos:
 
-python manage.py makemigrations
+python manage.py makemigrations - 
 python manage.py migrate
 
 Ejecución del Proyecto
